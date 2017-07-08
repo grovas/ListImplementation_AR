@@ -71,12 +71,12 @@ public class ListImpl {
 
     public void listSize () {
         Node temp = listTail;
-        int rozmiar = 0;
+        int size = 0;
         while (temp != null) {
             temp = temp.getNext();
-            rozmiar++;
+            size++;
         }
-        System.out.println("Rozmiar listy wynosi: " + rozmiar);
+        System.out.println("Rozmiar listy wynosi: " + size);
     }
 
     public void removeElement (String value) {
@@ -101,6 +101,5 @@ public class ListImpl {
         }
         System.out.println("Lista po usunieciu");
         printFromTheStart();
-
     }
 }
